@@ -26,7 +26,22 @@ app.use(bodyParser.urlencoded({ extended: false}));
 // ROUTE
 app.get('/', function(req, res){
     // console.log('Recipe App');
-    res.render('index');
+
+    // res.render('index');
+
+        const { Client, Query } = require('pg')
+        const query = client.query(new Query('SELECT NOW()'))
+        query.on('row', (row) => {
+
+        })
+        query.on('end', (res) => {
+
+        })
+        query.on('error', (res) => {
+
+        })
+    
+
     
 });
 
