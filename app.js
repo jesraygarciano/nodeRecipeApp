@@ -27,7 +27,10 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.get('/', function(req, res){
     // console.log('Recipe App');
     res.render('index');
+    
 });
+
+
 // Server
 app.listen(3000, function(){
     console.log('Server Started on Port 3000');
