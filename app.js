@@ -4,7 +4,7 @@ var express = require('express'),
     cons = require('consolidate'),
     dust = require('dustjs-helpers'),
     pg = require('pg'),
-    app = expres();
+    app = express();
 
 // DB Connect String
 var connect = "postgres://jesray:password@localhost/recipeapp";
@@ -21,4 +21,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Body Parser Middleware
 app.use(bodyParser.json());
-app.user(bodyParser.urlencoded)
+app.use(bodyParser.urlencoded({ extended: false}));
+
+// ROUTE
+app.get('/', function(req, res){
+    // console.log('Recipe App');
+    res.render('index');
+});
+// Server
+app.listen(3000, function(){
+    console.log('Server Started on Port 3000');
+});
