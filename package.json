@@ -1,0 +1,28 @@
+{
+  "name": "noderecipes",
+  "version": "1.0.0",
+  "description": "Recipe manager",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "consolidate": "*",
+    "dust": "*",
+    "dustjs-helpers": "*",
+    "dustjs-linkedin": "*",
+    "express": "*",
+    "pg": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesraygarciano/nodeRecipeApp.git"
+  },
+  "author": "Jesray Garciano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesraygarciano/nodeRecipeApp/issues"
+  },
+  "homepage": "https://github.com/jesraygarciano/nodeRecipeApp#readme"
+}
